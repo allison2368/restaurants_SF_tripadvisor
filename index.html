@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c0fcb71dc18b0b33651c73ad5346cda4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c0fcb71dc18b0b33651c73ad5346cda4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c0fcb71dc18b0b33651c73ad5346cda4 = L.map(
+                "map_c0fcb71dc18b0b33651c73ad5346cda4",
+                {
+                    center: [37.79701, -122.399886],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ed46ce6652932d27d14e8ac8679bd72b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ed46ce6652932d27d14e8ac8679bd72b.addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var marker_ce3aa53d54655793d82778acfea7f58f = L.marker(
+                [37.8225343, -122.3756693],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_d7362f9a780ca8e27a610d92a2a9291b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce3aa53d54655793d82778acfea7f58f.setIcon(icon_d7362f9a780ca8e27a610d92a2a9291b);
+        
+    
+        var popup_bde2729a4984ef70db0f2409ca0f8adb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5880bc95a5c2f07eb41f259c4c9bdd55 = $(`<div id="html_5880bc95a5c2f07eb41f259c4c9bdd55" style="width: 100.0%; height: 100.0%;">Mersea Restaurant & Bar</div>`)[0];
+                popup_bde2729a4984ef70db0f2409ca0f8adb.setContent(html_5880bc95a5c2f07eb41f259c4c9bdd55);
+            
+        
+
+        marker_ce3aa53d54655793d82778acfea7f58f.bindPopup(popup_bde2729a4984ef70db0f2409ca0f8adb)
+        ;
+
+        
+    
+    
+            marker_ce3aa53d54655793d82778acfea7f58f.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e7cc0f12992d547d14d8e7c30550d59 = L.marker(
+                [37.7850502, -122.3998171],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_acdcf2f2b596b3254829a19ae0077dfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5e7cc0f12992d547d14d8e7c30550d59.setIcon(icon_acdcf2f2b596b3254829a19ae0077dfd);
+        
+    
+        var popup_09f2b9600c56c70ffdda7974b9628ca2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66991dc9066b139e40d7b3558a894493 = $(`<div id="html_66991dc9066b139e40d7b3558a894493" style="width: 100.0%; height: 100.0%;">Fogo de Chão Brazilian Steakhouse</div>`)[0];
+                popup_09f2b9600c56c70ffdda7974b9628ca2.setContent(html_66991dc9066b139e40d7b3558a894493);
+            
+        
+
+        marker_5e7cc0f12992d547d14d8e7c30550d59.bindPopup(popup_09f2b9600c56c70ffdda7974b9628ca2)
+        ;
+
+        
+    
+    
+            marker_5e7cc0f12992d547d14d8e7c30550d59.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfc90c482336e0d69c266a14e21b84b3 = L.marker(
+                [37.8016453, -122.4123444],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_c1052f0b71775e26a9b2f6c7a8fff605 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bfc90c482336e0d69c266a14e21b84b3.setIcon(icon_c1052f0b71775e26a9b2f6c7a8fff605);
+        
+    
+        var popup_f843aa42e9be912ea58666b92460488a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42eac52131db5fb211d44c0a9b1bf03b = $(`<div id="html_42eac52131db5fb211d44c0a9b1bf03b" style="width: 100.0%; height: 100.0%;">Luisa's Restaurant Wine Bar Since 1959</div>`)[0];
+                popup_f843aa42e9be912ea58666b92460488a.setContent(html_42eac52131db5fb211d44c0a9b1bf03b);
+            
+        
+
+        marker_bfc90c482336e0d69c266a14e21b84b3.bindPopup(popup_f843aa42e9be912ea58666b92460488a)
+        ;
+
+        
+    
+    
+            marker_bfc90c482336e0d69c266a14e21b84b3.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_714f518a11aee5967630cb8ac4602333 = L.marker(
+                [37.766587, -122.4331557],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_990df42addd85657139c8452dbd94716 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_714f518a11aee5967630cb8ac4602333.setIcon(icon_990df42addd85657139c8452dbd94716);
+        
+    
+        var popup_3e4287557bd3fb24ab289a7588f14a90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98038029571f467451e64cef68bfb842 = $(`<div id="html_98038029571f467451e64cef68bfb842" style="width: 100.0%; height: 100.0%;">L'ardoise Bistro</div>`)[0];
+                popup_3e4287557bd3fb24ab289a7588f14a90.setContent(html_98038029571f467451e64cef68bfb842);
+            
+        
+
+        marker_714f518a11aee5967630cb8ac4602333.bindPopup(popup_3e4287557bd3fb24ab289a7588f14a90)
+        ;
+
+        
+    
+    
+            marker_714f518a11aee5967630cb8ac4602333.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab6c0045130c28c701ac2653bd72b9ab = L.marker(
+                [37.798122, -122.41857],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_0bf2f1c6b2b3fa34198d826aeb45677e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ab6c0045130c28c701ac2653bd72b9ab.setIcon(icon_0bf2f1c6b2b3fa34198d826aeb45677e);
+        
+    
+        var popup_3b01a53ac07581c7e1e6ce83e8996b6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4862140087bf127dcea48ba2a415c573 = $(`<div id="html_4862140087bf127dcea48ba2a415c573" style="width: 100.0%; height: 100.0%;">Seven Hills</div>`)[0];
+                popup_3b01a53ac07581c7e1e6ce83e8996b6c.setContent(html_4862140087bf127dcea48ba2a415c573);
+            
+        
+
+        marker_ab6c0045130c28c701ac2653bd72b9ab.bindPopup(popup_3b01a53ac07581c7e1e6ce83e8996b6c)
+        ;
+
+        
+    
+    
+            marker_ab6c0045130c28c701ac2653bd72b9ab.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56f3e3af50b258b10b794b294a7835c4 = L.marker(
+                [37.8075356, -122.4200793],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_dcfe57402e9cc3f856205098fc96f9d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_56f3e3af50b258b10b794b294a7835c4.setIcon(icon_dcfe57402e9cc3f856205098fc96f9d5);
+        
+    
+        var popup_ee27180f5faaf17ddf5a1691a05c519d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ee55908f9631cea96e43efefdae6fc3 = $(`<div id="html_2ee55908f9631cea96e43efefdae6fc3" style="width: 100.0%; height: 100.0%;">Blue Mermaid Restaurant</div>`)[0];
+                popup_ee27180f5faaf17ddf5a1691a05c519d.setContent(html_2ee55908f9631cea96e43efefdae6fc3);
+            
+        
+
+        marker_56f3e3af50b258b10b794b294a7835c4.bindPopup(popup_ee27180f5faaf17ddf5a1691a05c519d)
+        ;
+
+        
+    
+    
+            marker_56f3e3af50b258b10b794b294a7835c4.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_088ff37a2caa7ce654ef3b4282d24676 = L.marker(
+                [37.806252, -122.419208],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_1a885185c976a6b5d8c68ae27127b38a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_088ff37a2caa7ce654ef3b4282d24676.setIcon(icon_1a885185c976a6b5d8c68ae27127b38a);
+        
+    
+        var popup_15a2e838e43f842f10f45c539d104b18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc06106a63d276032253f9394c86b985 = $(`<div id="html_cc06106a63d276032253f9394c86b985" style="width: 100.0%; height: 100.0%;">Eight Am</div>`)[0];
+                popup_15a2e838e43f842f10f45c539d104b18.setContent(html_cc06106a63d276032253f9394c86b985);
+            
+        
+
+        marker_088ff37a2caa7ce654ef3b4282d24676.bindPopup(popup_15a2e838e43f842f10f45c539d104b18)
+        ;
+
+        
+    
+    
+            marker_088ff37a2caa7ce654ef3b4282d24676.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f0a9b2081adc013be64a8ae8bc809ef = L.marker(
+                [37.7875459, -122.4131381],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_fa6563afeeb3397d7c3f439ecedb0e29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8f0a9b2081adc013be64a8ae8bc809ef.setIcon(icon_fa6563afeeb3397d7c3f439ecedb0e29);
+        
+    
+        var popup_f1b1621325441507487c833c3f94559a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77c3f898f7d48d57549a03b66b0cac69 = $(`<div id="html_77c3f898f7d48d57549a03b66b0cac69" style="width: 100.0%; height: 100.0%;">Lapisara Eatery</div>`)[0];
+                popup_f1b1621325441507487c833c3f94559a.setContent(html_77c3f898f7d48d57549a03b66b0cac69);
+            
+        
+
+        marker_8f0a9b2081adc013be64a8ae8bc809ef.bindPopup(popup_f1b1621325441507487c833c3f94559a)
+        ;
+
+        
+    
+    
+            marker_8f0a9b2081adc013be64a8ae8bc809ef.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b74c887b533332797b83f173f9d14a3 = L.marker(
+                [37.7991868, -122.4071897],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_c549645441e37c245e9604c19e878fe8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3b74c887b533332797b83f173f9d14a3.setIcon(icon_c549645441e37c245e9604c19e878fe8);
+        
+    
+        var popup_21da2e3c88202bf5af4c66d314e2785d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9be4bb78f84e71fa2b72c817959bb7f6 = $(`<div id="html_9be4bb78f84e71fa2b72c817959bb7f6" style="width: 100.0%; height: 100.0%;">Mo's Grill</div>`)[0];
+                popup_21da2e3c88202bf5af4c66d314e2785d.setContent(html_9be4bb78f84e71fa2b72c817959bb7f6);
+            
+        
+
+        marker_3b74c887b533332797b83f173f9d14a3.bindPopup(popup_21da2e3c88202bf5af4c66d314e2785d)
+        ;
+
+        
+    
+    
+            marker_3b74c887b533332797b83f173f9d14a3.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb526d19786aa75aa6de3c11fea46085 = L.marker(
+                [37.79701, -122.399886],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_2b645992ce55825c186254450d2d86fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fb526d19786aa75aa6de3c11fea46085.setIcon(icon_2b645992ce55825c186254450d2d86fc);
+        
+    
+        var popup_68e5f97cb54786bfd25fd1c53a1c9c4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d303f8a349d2b98e2ab18f486e65c95 = $(`<div id="html_9d303f8a349d2b98e2ab18f486e65c95" style="width: 100.0%; height: 100.0%;">Kokkari Estiatorio</div>`)[0];
+                popup_68e5f97cb54786bfd25fd1c53a1c9c4a.setContent(html_9d303f8a349d2b98e2ab18f486e65c95);
+            
+        
+
+        marker_fb526d19786aa75aa6de3c11fea46085.bindPopup(popup_68e5f97cb54786bfd25fd1c53a1c9c4a)
+        ;
+
+        
+    
+    
+            marker_fb526d19786aa75aa6de3c11fea46085.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_971d7fdcbe2869661955806a2c9fc568 = L.marker(
+                [37.7975151, -122.4032498],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_9ff0423f0758ab2522672d96308eb3a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_971d7fdcbe2869661955806a2c9fc568.setIcon(icon_9ff0423f0758ab2522672d96308eb3a9);
+        
+    
+        var popup_b9441cf0164efd2280025a352e9852e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69b4c767a2d0a0b32eb09532e46089f5 = $(`<div id="html_69b4c767a2d0a0b32eb09532e46089f5" style="width: 100.0%; height: 100.0%;">Quince</div>`)[0];
+                popup_b9441cf0164efd2280025a352e9852e7.setContent(html_69b4c767a2d0a0b32eb09532e46089f5);
+            
+        
+
+        marker_971d7fdcbe2869661955806a2c9fc568.bindPopup(popup_b9441cf0164efd2280025a352e9852e7)
+        ;
+
+        
+    
+    
+            marker_971d7fdcbe2869661955806a2c9fc568.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16c53e39325de81dbc366ec1edfae9f8 = L.marker(
+                [37.8013592, -122.4119709],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_b436e57a899c68fb37103f58b4841cd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_16c53e39325de81dbc366ec1edfae9f8.setIcon(icon_b436e57a899c68fb37103f58b4841cd2);
+        
+    
+        var popup_35106d774e05ea6b53157d5839d3f3b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebabdf092107d4fa614a5474295ca075 = $(`<div id="html_ebabdf092107d4fa614a5474295ca075" style="width: 100.0%; height: 100.0%;">Piccolo Forno</div>`)[0];
+                popup_35106d774e05ea6b53157d5839d3f3b3.setContent(html_ebabdf092107d4fa614a5474295ca075);
+            
+        
+
+        marker_16c53e39325de81dbc366ec1edfae9f8.bindPopup(popup_35106d774e05ea6b53157d5839d3f3b3)
+        ;
+
+        
+    
+    
+            marker_16c53e39325de81dbc366ec1edfae9f8.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e82eb33d5d64a7afd9ec089b9a0b289 = L.marker(
+                [37.8067912, -122.4175639],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_ac4206cba233c01cc9b84868a04f1a72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1e82eb33d5d64a7afd9ec089b9a0b289.setIcon(icon_ac4206cba233c01cc9b84868a04f1a72);
+        
+    
+        var popup_23ec8130dbc85da125cfc9a0b0b38ba2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7699b2b823418c6eccbd09d757ef8fce = $(`<div id="html_7699b2b823418c6eccbd09d757ef8fce" style="width: 100.0%; height: 100.0%;">Surisan</div>`)[0];
+                popup_23ec8130dbc85da125cfc9a0b0b38ba2.setContent(html_7699b2b823418c6eccbd09d757ef8fce);
+            
+        
+
+        marker_1e82eb33d5d64a7afd9ec089b9a0b289.bindPopup(popup_23ec8130dbc85da125cfc9a0b0b38ba2)
+        ;
+
+        
+    
+    
+            marker_1e82eb33d5d64a7afd9ec089b9a0b289.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b878975dedaa493eabe907183c434bb3 = L.marker(
+                [37.7596437, -122.4346403],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_974641f3bd4b268e9c643d225a53a6ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b878975dedaa493eabe907183c434bb3.setIcon(icon_974641f3bd4b268e9c643d225a53a6ae);
+        
+    
+        var popup_fcc2b31d41840e2c79ae053bbde37e14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8baf5ee2f971a05201c64418a87823c3 = $(`<div id="html_8baf5ee2f971a05201c64418a87823c3" style="width: 100.0%; height: 100.0%;">Anchor Oyster Bar</div>`)[0];
+                popup_fcc2b31d41840e2c79ae053bbde37e14.setContent(html_8baf5ee2f971a05201c64418a87823c3);
+            
+        
+
+        marker_b878975dedaa493eabe907183c434bb3.bindPopup(popup_fcc2b31d41840e2c79ae053bbde37e14)
+        ;
+
+        
+    
+    
+            marker_b878975dedaa493eabe907183c434bb3.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b49aed449026f51348be6d5b4f6e600f = L.marker(
+                [37.7857147, -122.4351313],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_4fb7bfd02ca5c071837e2476625339b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b49aed449026f51348be6d5b4f6e600f.setIcon(icon_4fb7bfd02ca5c071837e2476625339b8);
+        
+    
+        var popup_add066fcb093baabffe1a4c99b8ddc4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcf65c4704f1bdb1eb7e8e0bf595503c = $(`<div id="html_dcf65c4704f1bdb1eb7e8e0bf595503c" style="width: 100.0%; height: 100.0%;">Sweet Maple</div>`)[0];
+                popup_add066fcb093baabffe1a4c99b8ddc4f.setContent(html_dcf65c4704f1bdb1eb7e8e0bf595503c);
+            
+        
+
+        marker_b49aed449026f51348be6d5b4f6e600f.bindPopup(popup_add066fcb093baabffe1a4c99b8ddc4f)
+        ;
+
+        
+    
+    
+            marker_b49aed449026f51348be6d5b4f6e600f.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f5c7c0359f87a6ff1af92eb8029d8d7 = L.marker(
+                [37.861799, -122.494681],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_56c61ed749b1e600c7439f593c5b73bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4f5c7c0359f87a6ff1af92eb8029d8d7.setIcon(icon_56c61ed749b1e600c7439f593c5b73bf);
+        
+    
+        var popup_baaf7cdb7d0f14a6c7e3a8b92beafff2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2154e822d9e97f51148f02ba7c752c96 = $(`<div id="html_2154e822d9e97f51148f02ba7c752c96" style="width: 100.0%; height: 100.0%;">Fred's Coffee Shop</div>`)[0];
+                popup_baaf7cdb7d0f14a6c7e3a8b92beafff2.setContent(html_2154e822d9e97f51148f02ba7c752c96);
+            
+        
+
+        marker_4f5c7c0359f87a6ff1af92eb8029d8d7.bindPopup(popup_baaf7cdb7d0f14a6c7e3a8b92beafff2)
+        ;
+
+        
+    
+    
+            marker_4f5c7c0359f87a6ff1af92eb8029d8d7.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_500397f3144d0288d4962c2fc4a2296b = L.marker(
+                [37.7982667, -122.4069722],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_a84e9172deb9db5e1b9df3019094a9f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_500397f3144d0288d4962c2fc4a2296b.setIcon(icon_a84e9172deb9db5e1b9df3019094a9f2);
+        
+    
+        var popup_17aac803118aa8bc645f8e732d363c3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf4dae927c073534e211a32f540a75d5 = $(`<div id="html_cf4dae927c073534e211a32f540a75d5" style="width: 100.0%; height: 100.0%;">Betty Lou's Seafood and Grill</div>`)[0];
+                popup_17aac803118aa8bc645f8e732d363c3b.setContent(html_cf4dae927c073534e211a32f540a75d5);
+            
+        
+
+        marker_500397f3144d0288d4962c2fc4a2296b.bindPopup(popup_17aac803118aa8bc645f8e732d363c3b)
+        ;
+
+        
+    
+    
+            marker_500397f3144d0288d4962c2fc4a2296b.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05ae66bd0467b574f8c3727f67ee445c = L.marker(
+                [37.787984, -122.412286],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_bc532fcbaeaf6caea2b3223b7ae6a8c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_05ae66bd0467b574f8c3727f67ee445c.setIcon(icon_bc532fcbaeaf6caea2b3223b7ae6a8c0);
+        
+    
+        var popup_c8a25c2da63eaeb3e37bed98b19bd2c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3144d735e58e48052503ea519091269 = $(`<div id="html_b3144d735e58e48052503ea519091269" style="width: 100.0%; height: 100.0%;">Fino Bar & Ristorante</div>`)[0];
+                popup_c8a25c2da63eaeb3e37bed98b19bd2c9.setContent(html_b3144d735e58e48052503ea519091269);
+            
+        
+
+        marker_05ae66bd0467b574f8c3727f67ee445c.bindPopup(popup_c8a25c2da63eaeb3e37bed98b19bd2c9)
+        ;
+
+        
+    
+    
+            marker_05ae66bd0467b574f8c3727f67ee445c.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9facb58f0e615d160f8d5cf2d7bd8f3 = L.marker(
+                [37.79836, -122.419105],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_0871a014d7b003857c1a147da45dc56a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f9facb58f0e615d160f8d5cf2d7bd8f3.setIcon(icon_0871a014d7b003857c1a147da45dc56a);
+        
+    
+        var popup_b60ee947ede884cdceed05da2028db63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd60c57a1414596ffedb9d2000c43923 = $(`<div id="html_dd60c57a1414596ffedb9d2000c43923" style="width: 100.0%; height: 100.0%;">Frascati</div>`)[0];
+                popup_b60ee947ede884cdceed05da2028db63.setContent(html_dd60c57a1414596ffedb9d2000c43923);
+            
+        
+
+        marker_f9facb58f0e615d160f8d5cf2d7bd8f3.bindPopup(popup_b60ee947ede884cdceed05da2028db63)
+        ;
+
+        
+    
+    
+            marker_f9facb58f0e615d160f8d5cf2d7bd8f3.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09ad14f13140eb6802b785d2adb8cc86 = L.marker(
+                [37.7985461, -122.4191479],
+                {}
+            ).addTo(map_c0fcb71dc18b0b33651c73ad5346cda4);
+        
+    
+            var icon_d923e269ada573248f60462908d1c78b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09ad14f13140eb6802b785d2adb8cc86.setIcon(icon_d923e269ada573248f60462908d1c78b);
+        
+    
+        var popup_25fd078c2efa4740c61ce7b2bc081381 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a9cdcb1a824d40d020ff538d8a7656d = $(`<div id="html_6a9cdcb1a824d40d020ff538d8a7656d" style="width: 100.0%; height: 100.0%;">Za Pizza</div>`)[0];
+                popup_25fd078c2efa4740c61ce7b2bc081381.setContent(html_6a9cdcb1a824d40d020ff538d8a7656d);
+            
+        
+
+        marker_09ad14f13140eb6802b785d2adb8cc86.bindPopup(popup_25fd078c2efa4740c61ce7b2bc081381)
+        ;
+
+        
+    
+    
+            marker_09ad14f13140eb6802b785d2adb8cc86.bindTooltip(
+                `<div>
+                     Click me!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
